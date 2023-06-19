@@ -1,9 +1,58 @@
 {
-  "": [
-    "a"
-  ],
-  "b": [
-    "d",
-    "f"
+  "name": "root",
+  "kind": "root",
+  "children": [
+    {
+      "name": "a",
+      "kind": "VariableDeclaration",
+      "type": "number",
+      "value": "1"
+    },
+    {
+      "name": "b",
+      "kind": "FunctionDeclaration",
+      "children": [
+        {
+          "name": "c",
+          "kind": "Parameter",
+          "type": "number"
+        },
+        {
+          "name": "d",
+          "kind": "VariableDeclaration",
+          "type": "1",
+          "value": "1"
+        },
+        {
+          "name": "f",
+          "kind": "VariableDeclaration",
+          "type": "\"string\"",
+          "value": "\"string\""
+        },
+        {
+          "name": "g",
+          "kind": "FunctionDeclaration",
+          "children": [
+            {
+              "name": "insideG",
+              "kind": "VariableDeclaration",
+              "type": "boolean",
+              "value": "true"
+            },
+            {
+              "name": "e",
+              "kind": "FunctionDeclaration",
+              "children": [
+                {
+                  "name": "t",
+                  "kind": "Parameter",
+                  "type": "boolean"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   ]
 }
